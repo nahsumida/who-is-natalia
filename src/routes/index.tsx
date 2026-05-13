@@ -140,6 +140,7 @@ function Portfolio() {
 function Header() {
   const links = [
     { href: "#experience", label: "Experiência" },
+    { href: "#education", label: "Educação" },
     { href: "#speaking", label: "Speaking" },
     { href: "#community", label: "Comunidade" },
     { href: "#contact", label: "Contato" },
