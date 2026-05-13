@@ -187,8 +187,8 @@ function Hero() {
           <a href="#experience" className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 glow">
             Ver trajetória <ArrowUpRight className="h-4 w-4" />
           </a>
-          <a href="#research" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-primary hover:text-primary">
-            Pesquisa em LLMs
+          <a href="#community" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-primary hover:text-primary">
+            Comunidade Search & AI
           </a>
         </div>
       </div>
