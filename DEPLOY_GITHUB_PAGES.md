@@ -1,6 +1,6 @@
 # Deploy no GitHub Pages
 
-Este projeto foi gerado a partir de um template **TanStack Start com SSR** (rodando em Cloudflare Workers no Lovable). O GitHub Pages só hospeda **arquivos estáticos**, então alguns ajustes podem ser necessários.
+Este projeto agora gera um **SPA 100% estático** com Vite, compatível com GitHub Pages.
 
 ## Passos
 
@@ -9,12 +9,12 @@ Este projeto foi gerado a partir de um template **TanStack Start com SSR** (roda
 3. Faça push para a branch `main` — o workflow `.github/workflows/deploy.yml` roda o build e publica.
 4. Acesse `https://<usuario>.github.io/<nome-do-repo>/`.
 
-## Limitações importantes
+## Como está configurado
 
-- **Sem SSR**: meta tags dinâmicas e SEO server-side não funcionam — apenas o que o React renderizar no client.
-- **Sem server functions**: qualquer `createServerFn` quebra. O `ContactForm` atual já é um mock (sem backend), então não impacta.
-- **Subpath**: se o repo se chamar `meu-portfolio`, a URL será `usuario.github.io/meu-portfolio/`. Pode ser necessário configurar `base` no Vite — abra um chat pedindo "configurar base path para GitHub Pages com nome `meu-portfolio`" se os assets não carregarem.
-- **Roteamento**: o fallback `404.html` é criado automaticamente para deep links funcionarem.
+- **Build estático**: `bun run build` gera a pasta `dist/` diretamente.
+- **Subpath automático**: o workflow usa `/nome-do-repo/` em repositórios normais e `/` em repositórios `usuario.github.io`.
+- **Roteamento SPA**: o workflow copia `dist/index.html` para `dist/404.html`, permitindo abrir links diretos sem 404 definitivo.
+- **Sem backend/SSR**: não use server functions em GitHub Pages; o formulário atual roda somente no navegador.
 
 ## Alternativa recomendada
 
