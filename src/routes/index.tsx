@@ -75,7 +75,7 @@ const experiences = [
     role: "Software Engineer II",
     company: "iFood",
     period: "2024 — Presente",
-    focus: "Ranking & Latência",
+    focus: "Ranking & Relevância",
     bullets: [
       "Lidera iniciativas de ranking de busca, otimizando relevância e CTR em escala.",
       "Construção de microsserviços em Golang para indexação de dados e pipeline de busca.",
