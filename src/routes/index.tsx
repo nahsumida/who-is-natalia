@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ContactForm } from "@/components/ContactForm";
 import {
   ArrowUpRight, Github, Linkedin, Mail, Mic2, Users,
-  Briefcase, Code2, Search, Cpu, Database, Workflow, Bot, Zap,
+  Briefcase, Code2, Search, Cpu, Database, Workflow, Bot, Zap, GraduationCap,
 } from "lucide-react";
 
 const SITE = {
@@ -126,6 +126,7 @@ function Portfolio() {
         <Hero />
         <Stack />
         <Experience />
+        <Education />
         <Speaking />
         <Community />
         <Contact />
@@ -139,6 +140,7 @@ function Portfolio() {
 function Header() {
   const links = [
     { href: "#experience", label: "Experiência" },
+    { href: "#education", label: "Educação" },
     { href: "#speaking", label: "Speaking" },
     { href: "#community", label: "Comunidade" },
     { href: "#contact", label: "Contato" },
@@ -265,11 +267,56 @@ function Experience() {
   );
 }
 
+const education = [
+  {
+    degree: "Bacharelado em Engenharia de Software",
+    school: "PUC-Campinas",
+    period: "2023 — 2026",
+    detail: "Graduação em andamento",
+  },
+  {
+    degree: "Técnico em Informática · Integrado ao Ensino Médio",
+    school: "COTUCA — Colégio Técnico de Campinas (Unicamp)",
+    period: "2019 — 2022",
+    detail: "Formação técnica integrada",
+  },
+];
+
+function Education() {
+  return (
+    <Section
+      id="education"
+      eyebrow="02 / Educação"
+      title="Formação acadêmica"
+      description="Base técnica e teórica em Computação e Engenharia de Software."
+    >
+      <ol className="relative space-y-6 border-l border-border pl-8">
+        {education.map((ed) => (
+          <li key={ed.period}>
+            <span className="absolute -left-[7px] mt-2 h-3 w-3 rounded-full bg-primary glow" aria-hidden />
+            <article className="rounded-xl border border-border bg-card/60 p-6 transition hover:border-primary/50">
+              <header className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-lg font-semibold">
+                  {ed.degree} <span className="text-muted-foreground">· {ed.school}</span>
+                </h3>
+                <span className="font-mono text-xs text-muted-foreground">{ed.period}</span>
+              </header>
+              <p className="inline-flex items-center gap-1.5 text-xs text-primary">
+                <GraduationCap className="h-3.5 w-3.5" /> {ed.detail}
+              </p>
+            </article>
+          </li>
+        ))}
+      </ol>
+    </Section>
+  );
+}
+
 function Speaking() {
   return (
     <Section
       id="speaking"
-      eyebrow="02 / Speaking"
+      eyebrow="03 / Speaking"
       title="Palestras & Comunidade"
       description="Compartilhando aprendizados sobre search em escala com a comunidade técnica brasileira."
     >
@@ -300,7 +347,7 @@ function Community() {
   return (
     <Section
       id="community"
-      eyebrow="03 / Comunidade"
+      eyebrow="04 / Comunidade"
       title="Search & AI Meetup BR"
       description="Organizo o Search & AI Meetup BR, comunidade que aproxima profissionais, estudantes e pesquisadores interessados em Search, IA e tecnologias relacionadas."
     >
@@ -346,7 +393,7 @@ function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="04 / Contato"
+      eyebrow="05 / Contato"
       title="Vamos conversar"
       description="Aberta a colaborações em search, IR, LLMs, palestras e pesquisa."
     >
