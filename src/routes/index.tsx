@@ -347,7 +347,7 @@ function Community() {
   return (
     <Section
       id="community"
-      eyebrow="03 / Comunidade"
+      eyebrow="04 / Comunidade"
       title="Search & AI Meetup BR"
       description="Organizo o Search & AI Meetup BR, comunidade que aproxima profissionais, estudantes e pesquisadores interessados em Search, IA e tecnologias relacionadas."
     >
