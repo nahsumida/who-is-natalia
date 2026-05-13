@@ -106,12 +106,13 @@ const talks = [
 ];
 
 const stack = [
-  { name: "Python", icon: Code2 },
-  { name: "FastAPI", icon: Cpu },
-  { name: "Java", icon: Code2 },
+  { name: "Golang", icon: Code2 },
   { name: "ElasticSearch", icon: Search },
-  { name: "LLMs", icon: Languages },
+  { name: "Kafka", icon: Workflow },
+  { name: "Agentes", icon: Bot },
+  { name: "Python", icon: Cpu },
   { name: "Postgres", icon: Database },
+  { name: "Cache", icon: Zap },
 ];
 
 function Portfolio() {
