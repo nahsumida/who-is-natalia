@@ -178,10 +178,9 @@ function Hero() {
           intenção, contexto e linguagem.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Sou {SITE.name.split(" ")[0]} — engenheira de software com foco em{" "}
-          <strong className="text-foreground">Search and Information Retrieval</strong>.
-          Trabalho com ranking, latência e LLMs em escala, e pesquiso diversidade
-          linguística em modelos de linguagem.
+          Sou {SITE.name} — engenheira de software com foco em{" "}
+          <strong className="text-foreground">Search, Relevance and Information Retrieval</strong>.
+          Trabalho com ranking, retrieval e IA em escala.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href="#experience" className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 glow">
