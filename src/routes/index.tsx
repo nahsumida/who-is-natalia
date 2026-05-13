@@ -357,11 +357,6 @@ function Contact() {
           </p>
           <ul className="space-y-3">
             <li>
-              <a href={`mailto:${SITE.email}`} className="inline-flex items-center gap-3 text-foreground transition hover:text-primary">
-                <Mail className="h-4 w-4" /> {SITE.email}
-              </a>
-            </li>
-            <li>
               <a href="https://linkedin.com/in/natalianaomi" className="inline-flex items-center gap-3 text-foreground transition hover:text-primary">
                 <Linkedin className="h-4 w-4" /> linkedin.com/in/natalianaomi
               </a>
