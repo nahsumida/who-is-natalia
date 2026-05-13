@@ -97,9 +97,9 @@ const experiences = [
 
 const talks = [
   {
-    title: "Search & Ranking em Escala: lições do iFood",
+    title: "Busca e IA em Escala",
     event: "TDC — The Developer's Conference",
-    year: "2024",
+    year: "2025",
     linkedinUrl: "https://www.linkedin.com/posts/nataliasumida_en-us-on-november-27th-i-experienced-ugcPost-7403239040059162627-g7jO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhDUXwB2dFjhE-EoyVyeQoSe-y5bbXGDvo",
     eventUrl: "https://thedevconf.com",
   },
