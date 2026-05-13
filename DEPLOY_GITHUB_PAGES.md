@@ -12,7 +12,7 @@ Este projeto agora gera um **SPA 100% estático** com Vite, compatível com GitH
 ## Como está configurado
 
 - **Build estático**: `bun run build` gera a pasta `dist/` diretamente.
-- **Subpath automático**: o workflow define `BASE_PATH=/${{ github.event.repository.name }}/`, então os assets carregam em `usuario.github.io/nome-do-repo/`.
+- **Subpath automático**: o workflow usa `/nome-do-repo/` em repositórios normais e `/` em repositórios `usuario.github.io`.
 - **Roteamento SPA**: o workflow copia `dist/index.html` para `dist/404.html`, permitindo abrir links diretos sem 404 definitivo.
 - **Sem backend/SSR**: não use server functions em GitHub Pages; o formulário atual roda somente no navegador.
 
