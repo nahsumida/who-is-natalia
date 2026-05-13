@@ -78,7 +78,7 @@ const experiences = [
     focus: "Ranking & Latência",
     bullets: [
       "Lidera iniciativas de ranking de busca, otimizando relevância e CTR em escala.",
-      "Reduz latência P99 do pipeline de search com tuning em ElasticSearch e serviços em Java/Python.",
+      "Construção de microsserviços em Golang para indexação de dados e pipeline de busca.",
       "Experimentação A/B contínua e métricas de qualidade de retrieval (NDCG, MRR).",
     ],
   },
