@@ -139,7 +139,7 @@ function Header() {
   const links = [
     { href: "#experience", label: "Experiência" },
     { href: "#speaking", label: "Speaking" },
-    { href: "#research", label: "Pesquisa" },
+    { href: "#community", label: "Comunidade" },
     { href: "#contact", label: "Contato" },
   ];
   return (
