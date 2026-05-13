@@ -97,7 +97,7 @@ const experiences = [
 
 const talks = [
   {
-    title: "Busca e IA em Escala",
+    title: "TDC — THE DEVELOPER'S CONFERENCE · 2025",
     event: "TDC — The Developer's Conference",
     year: "2025",
     linkedinUrl: "https://www.linkedin.com/posts/nataliasumida_en-us-on-november-27th-i-experienced-ugcPost-7403239040059162627-g7jO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhDUXwB2dFjhE-EoyVyeQoSe-y5bbXGDvo",
