@@ -126,6 +126,7 @@ function Portfolio() {
         <Hero />
         <Stack />
         <Experience />
+        <Education />
         <Speaking />
         <Community />
         <Contact />
