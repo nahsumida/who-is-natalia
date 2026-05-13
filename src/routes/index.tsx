@@ -286,7 +286,7 @@ function Education() {
   return (
     <Section
       id="education"
-      eyebrow="03 / Educação"
+      eyebrow="02 / Educação"
       title="Formação acadêmica"
       description="Base técnica e teórica em Computação e Engenharia de Software."
     >
