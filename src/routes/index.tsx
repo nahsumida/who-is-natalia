@@ -316,7 +316,7 @@ function Speaking() {
   return (
     <Section
       id="speaking"
-      eyebrow="02 / Speaking"
+      eyebrow="03 / Speaking"
       title="Palestras & Comunidade"
       description="Compartilhando aprendizados sobre search em escala com a comunidade técnica brasileira."
     >
