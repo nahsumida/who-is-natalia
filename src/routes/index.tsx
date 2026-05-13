@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ContactForm } from "@/components/ContactForm";
 import {
-  ArrowUpRight, Github, Linkedin, Mail, Mic2, GraduationCap,
+  ArrowUpRight, Github, Linkedin, Mail, Mic2, Users,
   Briefcase, Code2, Search, Languages, Cpu, Database,
 } from "lucide-react";
 
