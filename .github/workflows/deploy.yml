@@ -28,9 +28,13 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build
-        run: bun run build
-        env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          if [ "$REPO_NAME" = "${GITHUB_REPOSITORY_OWNER}.github.io" ]; then
+            BASE_PATH="/" bun run build
+          else
+            BASE_PATH="/$REPO_NAME/" bun run build
+          fi
 
       - name: Prepare static output
         run: |
