@@ -279,7 +279,7 @@ function Speaking() {
               <Mic2 className="h-4 w-4" />
               <span className="font-mono text-xs uppercase tracking-widest">{t.event} · {t.year}</span>
             </div>
-            <h3 className="mb-4 text-xl font-semibold leading-snug">{t.title}</h3>
+            <h3 className="mb-4 text-xl font-semibold leading-snug">Busca e IA em Escala</h3>
             <div className="flex gap-3">
               <a href={t.linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-foreground transition hover:text-primary">
                 <Linkedin className="h-3.5 w-3.5" /> Post no LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
