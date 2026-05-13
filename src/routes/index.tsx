@@ -362,11 +362,6 @@ function Contact() {
                 <Linkedin className="h-4 w-4" /> linkedin.com/in/natalianaomi
               </a>
             </li>
-            <li>
-              <a href="https://github.com/natalianaomi" className="inline-flex items-center gap-3 text-foreground transition hover:text-primary">
-                <Github className="h-4 w-4" /> github.com/natalianaomi
-              </a>
-            </li>
           </ul>
         </div>
         <div className="rounded-2xl border border-border bg-card/60 p-6 md:p-8">
