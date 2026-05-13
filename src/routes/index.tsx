@@ -282,10 +282,10 @@ function Speaking() {
             </div>
             <h3 className="mb-4 text-xl font-semibold leading-snug">{t.title}</h3>
             <div className="flex gap-3">
-              <a href={t.slidesUrl} className="inline-flex items-center gap-1.5 text-sm text-foreground transition hover:text-primary">
-                Slides <ArrowUpRight className="h-3.5 w-3.5" />
+              <a href={t.linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-foreground transition hover:text-primary">
+                <Linkedin className="h-3.5 w-3.5" /> Post no LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
-              <a href={t.eventUrl} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition hover:text-primary">
+              <a href={t.eventUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition hover:text-primary">
                 Evento <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>
