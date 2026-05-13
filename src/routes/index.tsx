@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ContactForm } from "@/components/ContactForm";
 import {
-  ArrowUpRight, Github, Linkedin, Mail, Mic2, GraduationCap,
+  ArrowUpRight, Github, Linkedin, Mail, Mic2, Users,
   Briefcase, Code2, Search, Languages, Cpu, Database,
 } from "lucide-react";
 
@@ -100,7 +100,7 @@ const talks = [
     title: "Search & Ranking em Escala: lições do iFood",
     event: "TDC — The Developer's Conference",
     year: "2024",
-    slidesUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/posts/nataliasumida_en-us-on-november-27th-i-experienced-ugcPost-7403239040059162627-g7jO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhDUXwB2dFjhE-EoyVyeQoSe-y5bbXGDvo",
     eventUrl: "https://thedevconf.com",
   },
 ];
@@ -126,7 +126,7 @@ function Portfolio() {
         <Stack />
         <Experience />
         <Speaking />
-        <Research />
+        <Community />
         <Contact />
       </main>
 
@@ -139,7 +139,7 @@ function Header() {
   const links = [
     { href: "#experience", label: "Experiência" },
     { href: "#speaking", label: "Speaking" },
-    { href: "#research", label: "Pesquisa" },
+    { href: "#community", label: "Comunidade" },
     { href: "#contact", label: "Contato" },
   ];
   return (
@@ -187,8 +187,8 @@ function Hero() {
           <a href="#experience" className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 glow">
             Ver trajetória <ArrowUpRight className="h-4 w-4" />
           </a>
-          <a href="#research" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-primary hover:text-primary">
-            Pesquisa em LLMs
+          <a href="#community" className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-primary hover:text-primary">
+            Comunidade Search & AI
           </a>
         </div>
       </div>
@@ -282,10 +282,10 @@ function Speaking() {
             </div>
             <h3 className="mb-4 text-xl font-semibold leading-snug">{t.title}</h3>
             <div className="flex gap-3">
-              <a href={t.slidesUrl} className="inline-flex items-center gap-1.5 text-sm text-foreground transition hover:text-primary">
-                Slides <ArrowUpRight className="h-3.5 w-3.5" />
+              <a href={t.linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-foreground transition hover:text-primary">
+                <Linkedin className="h-3.5 w-3.5" /> Post no LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
-              <a href={t.eventUrl} className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition hover:text-primary">
+              <a href={t.eventUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition hover:text-primary">
                 Evento <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>
@@ -296,32 +296,32 @@ function Speaking() {
   );
 }
 
-function Research() {
+function Community() {
   return (
     <Section
-      id="research"
-      eyebrow="03 / Acadêmico & Pesquisa"
-      title="Diversidade Linguística em LLMs"
-      description="Investigando o Digital Language Divide — como modelos de linguagem refletem (e amplificam) desigualdades de representação entre idiomas."
+      id="community"
+      eyebrow="03 / Comunidade"
+      title="Search & AI Meetup BR"
+      description="Organizo o Search & AI Meetup BR, comunidade que aproxima profissionais, estudantes e pesquisadores interessados em Search, IA e tecnologias relacionadas."
     >
       <article className="rounded-2xl border border-border bg-card/60 p-8 md:p-10">
         <div className="mb-6 inline-flex items-center gap-2 text-accent">
-          <GraduationCap className="h-5 w-5" />
-          <span className="font-mono text-xs uppercase tracking-widest">Pesquisa em andamento</span>
+          <Users className="h-5 w-5" />
+          <span className="font-mono text-xs uppercase tracking-widest">Comunidade ativa · São Paulo</span>
         </div>
         <h3 className="mb-4 max-w-3xl text-2xl font-semibold leading-snug md:text-3xl">
-          Como LLMs tratam idiomas de baixos recursos? E o que isso significa para sistemas de busca multilíngues?
+          Um espaço aberto e colaborativo para discutir busca, ranking, embeddings e LLMs.
         </h3>
-        <p className="mb-6 max-w-3xl text-muted-foreground">
-          A pesquisa explora a lacuna entre idiomas dominantes e sub-representados
-          em corpora de treino, propondo métricas de equidade linguística para
-          aplicações de IR e geração assistida.
+        <p className="mb-8 max-w-3xl text-muted-foreground">
+          Promovemos encontros presenciais e online com cases de mercado, pesquisa
+          acadêmica e networking técnico. Se você trabalha ou estuda Search, IA ou
+          recuperação de informação, venha participar.
         </p>
-        <ul className="grid gap-4 md:grid-cols-3">
+        <ul className="mb-8 grid gap-4 md:grid-cols-3">
           {[
-            { label: "Foco", value: "Linguistic Diversity" },
-            { label: "Domínio", value: "LLMs & IR" },
-            { label: "Tópico", value: "Digital Language Divide" },
+            { label: "Tópicos", value: "Search · Ranking · LLMs" },
+            { label: "Formato", value: "Presencial & Online" },
+            { label: "Base", value: "São Paulo, Brasil" },
           ].map((i) => (
             <li key={i.label} className="rounded-lg border border-border bg-background/40 p-4">
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{i.label}</p>
@@ -329,6 +329,14 @@ function Research() {
             </li>
           ))}
         </ul>
+        <a
+          href="https://www.search-ai.org/site/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 glow"
+        >
+          Visitar search-ai.org <ArrowUpRight className="h-4 w-4" />
+        </a>
       </article>
     </Section>
   );
