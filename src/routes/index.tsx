@@ -393,7 +393,7 @@ function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="04 / Contato"
+      eyebrow="05 / Contato"
       title="Vamos conversar"
       description="Aberta a colaborações em search, IR, LLMs, palestras e pesquisa."
     >
